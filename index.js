@@ -21,13 +21,15 @@ gsap.from(".hero-text", {
 });
 
 // Smooth Scroll
-const learnMore = document.querySelector('.learnMore');
+const learnMore = document.querySelectorAll('.learnMore');
 const aboutMe = document.querySelector('#aboutMe');
 if(learnMore){
-    learnMore.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        aboutMe.scrollIntoView({ behavior: 'smooth' });
-    });
+    learnMore.forEach((learn)=>{
+        learn.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            aboutMe.scrollIntoView({ behavior: 'smooth' });
+        })
+    })
 }
 
 const exp= document.querySelector('.experience-nav');
