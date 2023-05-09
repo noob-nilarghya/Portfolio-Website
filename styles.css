@@ -17,6 +17,7 @@ h1, h2{
   padding: 2% 5% 5% 5%;
   width: 100%;
   height: auto;
+  min-height: 100vh;
 }
 .header{
   margin-bottom: 10rem;
@@ -890,7 +891,7 @@ h1, h2{
     row-gap: 1rem;
   }
   .header{
-    padding-bottom: 8rem;
+    padding-bottom: 2rem;
     margin-bottom: 4rem;
   }
   .header-image {
@@ -996,6 +997,16 @@ h1, h2{
     grid-template-columns: 1.5fr 1fr;
   }
 }
+@media (max-width: 500px){
+  .image img {
+    width: 65%;
+  }
+  .image::after {
+    width: 55%;
+    padding-bottom: 55%;
+  }
+}
+
 @media (max-width: 420px){
   html{
     font-size: 40%;
@@ -1008,6 +1019,16 @@ h1, h2{
   }
   .project{
     padding: 5% 5% 10% 5%;
+  }
+  .image img {
+    width: 70%;
+  }
+  .image::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+  .meHeader {
+    row-gap: 5rem;
   }
 }
 @media (max-width: 361px){ /* Galaxy S8+ */
