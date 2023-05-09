@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="image/common/navLogo.ico">  
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,600,700" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- GASP cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- Pre-loader -->
+    <div id="preloader"></div>
+
+    <div class="upArrow">
+        <img class="upArrImage" src="/image/common/UP.png" alt="up⬆">
+    </div>
+
+    <div class="header">
+        <div class="hero" id="hero">
+            <div class="nav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="/"> <img class="navLogo" src="/image/common/navLogo.png" alt="nil."> Portfolio </a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse dropDownCentre" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item navSec">
+                                    <a class="about-nav learnMore" href="#">About</a>
+                                </li>
+                                <li class="nav-item navSec">
+                                    <a class="experience-nav navSec" href="#">Experience</a>
+                                </li>
+                                <li class="nav-item navSec">
+                                    <a class="skill-nav navSec" href="#">Skills</a>
+                                </li>
+                                <li class="nav-item navSec">
+                                    <a class="project-nav navSec" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item navSpecial">
+                                    <a class="contact-nav" href="mailto:roynilarghya2001@gmail.com" target="_blank">Let's talk</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="meHeader">
+                    <div class="header-about">
+                        <div class="hello">
+                            <p><img style="width: 12%;" src="/image/common/wavinFlag.gif" alt="Hi"> Hello, World!</p>
+                        </div>
+                        <h1 class="headingMyName">Nilarghya Roy</h1>
+
+                        <div class="hero-text">
+                            <p> Upcoming Advance Application Engineering intern at Accenture <br> 
+                                Proficient enough in Data Structures and Algorithms. <br>
+                                Loves Web Developments and learning new technologies. <br>
+                                B.E(2024 Grad) from Jadavpur University, Kolkata <br>
+                            </p> 
+                        </div>
+
+                        <div class="button">
+                            <a href="#" class="btn btnResume"> Resume </a>
+                            <a href="#" class="btn btnMore learnMore"> Know More </a>
+                        </div>
+                    </div>
+                    <div class="header-image">
+                        <div class="image">
+                            <img class="img" src="/image/common/main.jpg" alt="HeroImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="slant white-bg-bottom"></div> -->
+    </div>
+
+    <div class="mainBody">
+        <div class="about" id="aboutMe">
+            <!-- <div class="slant color-bg-top" style="background-color: #f5f4f5;"></div> -->
+            <div class="sectionHeading">
+                <div class="num">01</div>
+                <h2 class="heading">About Me</h2>
+            </div>
+            
+            <div class="section education hidden">
+                <img class="eduImage" src="/image/common/education.webp" alt="school">
+                <div class="content">
+                    <h2 class="heading">Educations</h2>
+                    <div class="detail">
+                        <div class="img-content JU">
+                            <img class="school-logo" src="/image/logo/JU.webp" alt="JU logo">
+                            <div>
+                                • &nbsp;B.E &nbsp; Electronics and Instrumentation Enginnering <br>
+                                &nbsp; &nbsp; Jadavpur University, Kolkata <br>
+                                &nbsp; &nbsp;2020-2024 &nbsp;&nbsp;&nbsp;&nbsp; CGPA : 9.05
+                            </div>
+                        </div>
+                        <div class="img-content JNV12">
+                            <img class="school-logo" src="/image/logo/jnv.webp" alt="JNV logo">
+                            <div>
+                                • &nbsp;Higher Secondary (CBSE) &nbsp; Physics, Chemistry, Mathematics <br>
+                                &nbsp; &nbsp;Jawahar Navodaya Vidyalaya, Rajgir, Nalanda <br>
+                                &nbsp; &nbsp;2017-2019 &nbsp;&nbsp;&nbsp;&nbsp; Percentage : 93.2%
+                            </div>
+                        </div>
+                        <div class="img-content JNV10">
+                            <img class="school-logo" src="/image/logo/jnv.webp" alt="JNV logo">
+                            <div>
+                                • &nbsp;Secondary (CBSE) &nbsp; General <br>
+                                &nbsp; &nbsp;Jawahar Navodaya Vidyalaya, Banipur, North 24 Parganas <br>
+                                &nbsp; &nbsp;2012-2017 &nbsp;&nbsp;&nbsp;&nbsp; CGPA : 9.8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section even achivement hidden">
+                <div class="content">
+                    <h2 class="heading" style="padding-bottom: 1rem;">Achivements</h2>
+                    <div class="detail flexDetail">
+                        <p>• &nbsp;Achieved Global rank 1209, 1576, 1602 out of 25k candidates in Leetcode Contest  </p>
+                        <p>• &nbsp;Finalist and achieved rank 400 out of 90k+ candidates in IICC(Innovate India Coding Championship), 2022 </p>
+                        <p>• &nbsp;Solved 1000+ DSA problems from various sites including LeetCode, CodeStudio, GeeksForGeeks etc. </p>
+                        <p>• &nbsp;Contributed in technical article of GeeksForGeeks</p>  
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="heading">Coding Profiles</h2>
+                    <div class="detail">
+                        <div class="img-content">
+                            <img class="profile-logo" src="/image/logo/LeetCode.webp" alt="LC Logo">
+                            <div>
+                                <a target="_blank" href="https://leetcode.com/roynilarghya/" class="profile-link lc">LeetCode</a>
+                                <p>• Knight on Leetcode (Max rating: 1984)</p>
+                                <p>• 750+ Problem solved (83% medum-hard)</p>
+                            </div>
+                        </div>
+                        <div class="img-content">
+                            <img class="profile-logo" src="/image/logo/codeStudio.webp" alt="CS logo">
+                            <div>
+                                <a target="_blank" href="https://www.codingninjas.com/codestudio/profile/Nilarghya_Roy" class="profile-link cs">Codestudio</a>
+                                <p>• Expert on Codestudio (Max rating: 2010)</p>
+                                <p>• 350+ Problem Solved (72% medum-hard)</p>
+                                
+                            </div>
+                        </div>
+                        <div class="img-content">
+                            <img class="profile-logo" src="/image/logo/HackerRank.webp" alt="HR logo">
+                            <div>
+                                <a target="_blank" href="https://www.hackerrank.com/roynilarghya" class="profile-link cs">HackerRank</a>
+                                <p>• Gold badge in Problem Solving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slant white-bg-bottom"></div> -->
+        </div>
+
+        <div class="experience" id="experience">
+            <!-- <div class="slant color-bg-top" style="background-color: #dceaf6;"></div> -->
+            <div class="sectionHeading">
+                <div class="num">02</div>
+                <h2 class="heading">Work Experiences</h2>
+            </div>
+            <div class="expContent">
+                <div class="expCard card1">
+                    <div class="circleCardImg">
+                        <img class="cardImg" style="padding-left: 4.5%;" src="/image/logo/accenture.webp" alt="accentureLogo">
+                    </div>
+                    
+                    <div class="text">
+                        <h3 class="companyName">Accenture</h3>
+                        <p>Upcoming Summer Intern
+                        <p>ROLE: Advance Application Enginner</p>
+                        <p>Duration: 2 Months</p>
+                    </div>
+                </div>
+                <div class="expCard card2">
+                    <div class="circleCardImg">
+                        <img class="cardImg" src="/image/logo/cn.webp" alt="CN logo">
+                    </div>
+
+                    <div class="text">
+                        <h3 class="companyName">Coding Ninjas</h3>
+                        <a target="_blank" href="https://drive.google.com/file/d/1e7O3d9M7RFVOXPRV3vjRxW_0Ippz09MN/view" class="taProof">Offer Letter Link</a>
+                        <p>ROLE: Teaching Assistant of DSA (C++)</p>
+                        <p>Duration: 1 Month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slant white-bg-bottom"></div> -->
+        </div>
+
+        <div class="skills" id="skills">
+            <!-- <div class="slant color-bg-top" style="background-color: #ece6e7;"></div> -->
+                <div class="sectionHeading">
+                    <div class="num">03</div>
+                    <h2 class="heading">My Skills</h2>
+                </div>
+
+                <div class="skillCards">
+                    <div class="sklWrapper">
+                        <div class="sklCard Scard1">
+                            <h2 class="skillHeading sklH2">Problem Solving</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/cpp.png" alt="C++ logo">
+                                    <p>C++ Language</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/ds.png" alt="DS logo">
+                                    <p>Data Structure</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/algo.png" alt="ProbSolvingLogo">
+                                    <p>Algorithms</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sklWrapper hidden">
+                        <div class="sklCard Scard2">
+                            <h2 class="skillHeading sklH2">Fundamentals</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/oops.png" alt="OOPs logo">
+                                    <p>OOPs</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/os.png" alt="OS logo">
+                                    <p>Operating System</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/dbms.png" alt="DB logo">
+                                    <p>DBMS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sklWrapper hidden">
+                        <div class="sklCard Scard3">
+                            <h2 class="skillHeading sklH2">Frontend</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/html.png" alt="HTML logo">
+                                    <p>HTML 5</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/css.png" alt="CSS logo">
+                                    <p>CSS 3 / SASS</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/bootstrap.png" alt="BootstrapLogo">
+                                    <p>Bootstrap 4</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/js.png" alt="JS logo">
+                                    <p>Javascript (ES6)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sklWrapper hidden">
+                        <div class="sklCard Scard4">
+                            <h2 class="skillHeading sklH2">Backend</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/node.png" alt="NodeJS logo">
+                                    <p>Node JS</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/express.png" alt="expressJS logo">
+                                    <p>Express JS</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/socketio.png" alt="socketIO logo">
+                                    <p>Socket.io</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sklWrapper hidden">
+                        <div class="sklCard Scard5">
+                            <h2 class="skillHeading sklH2">Database</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/mongoDB.png" alt="MongoDB logo">
+                                    <p>Mongo DB</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/sql.png" alt="SQL logo">
+                                    <p> Oracle SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sklWrapper hidden">
+                        <div class="sklCard Scard6">
+                            <h2 class="skillHeading sklH2">Miscellaneous</h2>
+                            <div class="cardContent">
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/git.png" alt="Git logo">
+                                    <p>Version Control: Git</p>
+                                </div>
+                                <div class="img-skl">
+                                    <img class="sklImage" src="/image/skill/vscode.png" alt="VSCode logo">
+                                    <p>Compiler: VS Code</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="slant white-bg-bottom"></div> -->
+        </div>
+
+        <div class="project" id="project">
+            <!-- <div class="slant color-bg-top" style="background-color: #f1ebfe;"></div> -->
+            <div class="sectionHeading">
+                <div class="num">04</div>
+                <h2 class="heading">Project Works</h2>
+            </div>
+
+            <div class="projectContent">
+
+
+                <div class="cardWrapper hidden" style="height: 100%;">
+                    <div class="Menucard">
+                        <img class="img-container" src="/image/ProjectPic/MealMate.webp" alt="MealMate front Page">
+    
+                        <div class="menuTxt" style="height: 100%;">
+                            <div class="menutext">
+                                <h2 style="font-weight: 700;">Meal Mate</h2>
+                                <p class="techused">EJS, SASS, Node JS, Express JS, Mongo DB, Socket IO, Rest API</p>
+
+                                <p class="menudescription" style="height: 100%;">Fullstack, responsive tiffin service application made with MVC architecture, with realtime user-admin interaction using socket IO, online payment integration, using node JS and mongoDB as backend</p>
+    
+                                <div class="menu-btn">
+                                    <a target="_blank" href="https://github.com/noob-nilarghya/MealMate" class="btnmenu"> Github Link </a>
+                                    <a target="_blank" href="http://mealmate-51c7.onrender.com/" class="btnmenu"> Deploy Link </a>
+                                </div>
+
+                                <div class="manydots" style="background-image: url('/image/common/dots.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="cardWrapper hidden" style="height: 100%;">
+                    <div class="Menucard">
+                        <img class="img-container" src="/image/ProjectPic/QuickTalk.webp" alt="QuickTalk front Page">
+    
+                        <div class="menuTxt" style="height: 100%;">
+                            <div class="menutext">
+                                <h2 style="font-weight: 700;">Quick Talk</h2>
+                                <p class="techused">HTML, CSS, Javascript, Socket IO</p>
+
+                                <p class="menudescription" style="height: 100%; padding-top: 10px;">Fully responsive, interactive, MVC architecture based Realtime random chat application with no limit on number of user joining chat room</p>
+    
+                                <div class="menu-btn">
+                                    <a target="_blank" href="https://github.com/noob-nilarghya/QuickTalk" class="btnmenu"> Github Link </a>
+                                    <a target="_blank" href="https://quicktalk.onrender.com/" class="btnmenu"> Deploy Link </a>
+                                </div>
+
+                                <div class="manydots" style="background-image: url('/image/common/dots.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardWrapper hidden" style="height: 100%;">
+                    <div class="Menucard">
+                        <img class="img-container" src="/image/ProjectPic/WeatherNil.webp" alt="WeatherNIL front page">
+    
+                        <div class="menuTxt" style="height: 100%;">
+                            <div class="menutext">
+                                <h2 style="font-weight: 700;">WeatherNil</h2>
+                                <p class="techused">EJS, CSS, Bootstrap, Express JS</p>
+
+                                <p class="menudescription" style="height: 100%;">Modern Responsive weather application made with bootstrap as front-end and express sever as back-end, forecasting next 24 hours weather info, along with map integration</p>
+    
+                                <div class="menu-btn">
+                                    <a target="_blank" href="https://github.com/noob-nilarghya/weatherNIL" class="btnmenu"> Github Link </a>
+                                    <a target="_blank" href="https://weathernil.onrender.com/" class="btnmenu"> Deploy Link </a>
+                                </div>
+
+                                <div class="manydots" style="background-image: url('/image/common/dots.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardWrapper hidden" style="height: 100%;">
+                    <div class="Menucard">
+                        <img class="img-container" src="/image/ProjectPic/SudokuMania.jpg" alt="SudokuMania front page">
+    
+                        <div class="menuTxt" style="height: 100%;">
+                            <div class="menutext">
+                                <h2 style="font-weight: 700;">Sudoku Mania</h2>
+                                <p class="techused">HTML, CSS, Vanilla Javascript</p>
+
+                                <p class="menudescription" style="height: 100%; padding-top: 10px;">Responsive sudoku game in 3 difficulty levels, with elegant dark mode and soothing background music made with pure vanilla Javascript</p>
+    
+                                <div class="menu-btn">
+                                    <a target="_blank" href="https://github.com/noob-nilarghya/sudoku__mania" class="btnmenu"> Github Link </a>
+                                    <a target="_blank" href="https://noob-nilarghya.github.io/sudoku__mania/" class="btnmenu"> Deploy Link </a>
+                                </div>
+
+                                <div class="manydots" style="background-image: url('/image/common/dots.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cardWrapper hidden" style="height: 100%;">
+                    <div class="Menucard">
+                        <img class="img-container" src="/image/ProjectPic/DinoRunner.jpg" alt="DinoRunner front page">
+    
+                        <div class="menuTxt" style="height: 100%;">
+                            <div class="menutext">
+                                <h2 style="font-weight: 700;">Dino Runner</h2>
+                                <p class="techused">HTML, CSS, Vanilla Javascript</p>
+
+                                <p class="menudescription" style="height: 100%;">Implemented chromium based Dino Runner game with some unique add-on like auto-play button made using basic HTML and Javascript</p>
+    
+                                <div class="menu-btn">
+                                    <a target="_blank" href="https://github.com/noob-nilarghya/Dino_Runner" class="btnmenu"> Github Link </a>
+                                    <a target="_blank" href="https://noob-nilarghya.github.io/Dino_Runner/" class="btnmenu"> Deploy Link </a>
+                                </div>
+
+                                <div class="manydots" style="background-image: url('/image/common/dots.png');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- <div class="slant white-bg-bottom"></div> -->
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerText">
+            <h2 class="footerHeading">Let's Talk</h2>
+            <div class="footerContent">
+                <p>Connect with me to have a healthy and friendly conversation.</p>
+                <p>Just leave a message to get in touch. Have a nice day <img style="width: 10%;" src="/image/common/wavinFlag.gif" alt="Bye"></p>
+            </div>
+            <a class="contact-nav footer-contact" href="mailto:roynilarghya2001@gmail.com" target="_blank">Let's talk</a>
+            <div class="socialIcons">
+                <a target="_blank" href="https://www.linkedin.com/in/nilarghya-roy-6a7637201/" class="icons"> <img class="iconImage" src="/image/socialIcons/linkedin.png" alt="linkedin"> </a>
+                <a target="_blank" href="https://github.com/noob-nilarghya" class="icons"> <img class="iconImage" src="/image/socialIcons/github.png" alt="Github"> </a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100005255746624" class="icons"> <img class="iconImage" src="/image/socialIcons/facebook.png" alt="Facebook"> </a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <script defer src="/index.js"></script>
+
+    <script>
+        // When page loads, hide pre-loader
+        const loader= document.querySelector('#preloader');
+        loader.style.opacity= 1;
+        function fade(){
+            (loader.style.opacity-=.1)<0?loader.style.display="none":setTimeout(fade,40)
+        }
+        window.addEventListener('load', (evt) => {
+            fade();
+        });
+    </script>
+</body>
+</html>
