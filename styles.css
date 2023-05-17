@@ -839,6 +839,10 @@ h1, h2{
   width: 15vw; 
   max-width: 30%;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.upArrImage:hover{
+  transform: scale(1.1);
 }
 .upArrow{
   display: flex;
@@ -998,6 +1002,8 @@ h1, h2{
   }
   .education{
     grid-template-columns: 1fr;
+    background: url('/image/common/education.webp');
+    background-repeat: no-repeat;
   }
   .projectContent {
     grid-template-columns: 1fr;
